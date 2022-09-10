@@ -3,13 +3,13 @@ pipeline{
     stages{
         stage ('Build'){
             steps{
-                mvn clean compile
+                sh 'mvn clean compile'
             }
 
         }
         stage ('packages'){
             steps{
-                mvn Package
+                sh 'mvn package'
             }
 
         }
