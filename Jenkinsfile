@@ -15,7 +15,7 @@ pipeline{
         }
         stage ('Deploy on tomat server'){
             steps{
-                sh 'cp /var/lib/jenkins/workspace/Myfirst_Pipeline_project/target/ /opt/tomcat/webapps/'
+                sh 'sudo cp -a /var/lib/jenkins/workspace/Myfirst_Pipeline_project/target/. /opt/tomcat/webapps/'
             }
 
         }
