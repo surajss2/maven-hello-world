@@ -13,11 +13,6 @@ pipeline{
             }
 
         }
-        stage ('Deploy'){
-            steps{
-                sh cp /var/lib/jenkins/workspace/Myfirst_Pipeline_project/target/ /home/suraj/opt/tomcat/webapps/
-            }
-
-        }
+        
     }
 }
